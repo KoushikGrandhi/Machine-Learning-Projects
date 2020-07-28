@@ -6,6 +6,7 @@ Accuracy ~84%
 
 
 CNN on InceptionV3
+
 Avg train accuracy ~91%
 Avg validation accuracy~94%
 
