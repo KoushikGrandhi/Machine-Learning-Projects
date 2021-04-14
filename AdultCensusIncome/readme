@@ -1,0 +1,5 @@
+Analysis of classification algortihms : 
+Data collected from : https://www.kaggle.com/uciml/adult-census-income
+20-NN proved to be giving highest accuracy for Target Feature : Income (0 for <=$50k and 1 for >$50k)
+Algorithms used:
+['GaussianNB','MultinomialNB','BernoulliNB','Decision Tree','Logistic Regression',str(i for i in [1,2,5,10,20,40])+'-NN']
