@@ -12,7 +12,8 @@ Below is the correlation mapping of the features with the target variable ‘Rai
 ![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture1.png "Logo Title Text 1")
 
 ## Data Pre-processing: 
-From the correlation plotting, it can be seen that some features like 'Humidity3pm', ‘Humidity9am', 'Cloud9am', 'Cloud3pm' have stronger say in predicting the next day rain while features like 'Pressure9am', 'Pressure3pm', ‘Sunshine’ has negative correlation with the target variable ‘RainTomorrow’. Also we have features like ………..  which contains Null values. So as a part of pre-processing we used the below pipeline –
+From the correlation plotting, it can be seen that some features like 'Humidity3pm', ‘Humidity9am', 'Cloud9am', 'Cloud3pm' have stronger say in predicting the next day rain while features like 'Pressure9am', 'Pressure3pm', ‘Sunshine’ has negative correlation with the target variable ‘RainTomorrow’. Also we have features which contains Null values. So as a part of pre-processing we used the below pipeline –
+
 **i) Data Cleaning:**
 Many of the above dataset had Null values in some of the features like 'Cloud9am', 'Cloud3pm' which were refilled by the mean value of the respective features. Some Null values were present in the target variable ‘RainTomorrow’ and important feature ‘RainToday’ which had to be dropped to avoid misfitting of data.
 
