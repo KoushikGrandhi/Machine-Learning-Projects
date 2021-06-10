@@ -41,3 +41,4 @@ I Trained the resulted dataset using: Logistic Regression, Gaussian Naïve Bayes
 **performance table**: 
 
 ![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture10.png "Logo Title Text 1")
+
