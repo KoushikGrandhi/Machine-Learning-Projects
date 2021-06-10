@@ -1,4 +1,5 @@
-## Problem Statement:
+
+Problem Statement:
 Predict next-day rain by training classification models on the target variable RainTomorrow based on dataset containing past 10 years of weather observations from many locations across Australia.
 ## Dataset Description:
 The file ‘weatherAUS.csv’ contains 142,193 data records each containing 23 columns. We have a large input feature set of 22 columns consisting of numeric as well as categorical features and one target variable ‘RainTomorrow’ as described below-
@@ -10,7 +11,7 @@ The file ‘weatherAUS.csv’ contains 142,193 data records each containing 23 c
 Below is the correlation mapping of the features with the target variable ‘RainTomorrow’.
 ![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture1.png "Logo Title Text 1")
 
-##Data Pre-processing: 
+## Data Pre-processing: 
 From the correlation plotting, it can be seen that some features like 'Humidity3pm', ‘Humidity9am', 'Cloud9am', 'Cloud3pm' have stronger say in predicting the next day rain while features like 'Pressure9am', 'Pressure3pm', ‘Sunshine’ has negative correlation with the target variable ‘RainTomorrow’. Also we have features like ………..  which contains Null values. So as a part of pre-processing we used the below pipeline –
 **i) Data Cleaning:**
 Many of the above dataset had Null values in some of the features like 'Cloud9am', 'Cloud3pm' which were refilled by the mean value of the respective features. Some Null values were present in the target variable ‘RainTomorrow’ and important feature ‘RainToday’ which had to be dropped to avoid misfitting of data.
@@ -26,7 +27,7 @@ The target variable ‘RainTomorrow’ and ‘RainToday’ has strong relation f
 **iii) Standard Scalar:**
 Features like 'Rainfall','WindGustSpeed', 'Humidity9am’ etc have different scale (in respective units), hence were normalized using Scikit’s off the box StandardScalar transformer.
 
-##Model Selection and Performance Evaluation:
+## Model Selection and Performance Evaluation:
 
 After pre-processing the data, we are ready to train different ML models and evaluate the performance on test set. Below are some points which needs to be highlighted -
 **i) Imbalanced data:** 
