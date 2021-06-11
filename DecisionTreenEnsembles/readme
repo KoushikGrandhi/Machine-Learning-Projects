@@ -1,3 +1,3 @@
-Implementation of the ID3 algorithm using Mutual Information on Monks[https://archive.ics.uci.edu/ml/machine-learning-databases/monks-problems/] and 
+Implementation of the ID3 algorithm without libraries using Mutual Information on Monks[https://archive.ics.uci.edu/ml/machine-learning-databases/monks-problems/] and 
 Mushroom dataset[https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/]
 along with implementation of sklearn DecisionTreeClassifier algorithm with result comparison.
