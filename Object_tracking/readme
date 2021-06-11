@@ -1,4 +1,4 @@
-Majorly contains object traking implementations using OpenCV with different approaches, so far implemented object tracking 
-by captureing the object pixel intesity histogram.
+Majorly contains object tracking implementations using OpenCV with different approaches, so far implemented object tracking 
+by capturing the object pixel intensity histogram.
 Next up would be implementing using DNN: Pretrained pose_iter_102000 (working well on image, need to work on video) and using MeadiaPipe.
 Might develop a Transformer network for the same
