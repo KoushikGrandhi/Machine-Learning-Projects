@@ -9,7 +9,7 @@ The file ‘weatherAUS.csv’ contains 142,193 data records each containing 23 c
 'Date', 'Location','WindGustDir','WindDir9am','WindDir3pm','RainToday', 'RainTomorrow'.
 
 Below is the correlation mapping of the features with the target variable ‘RainTomorrow’.
-![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture1.png "Logo Title Text 1")
+![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Australia/resources/Picture1.png "Logo Title Text 1")
 
 ## Data Pre-processing: 
 From the correlation plotting, it can be seen that some features like 'Humidity3pm', ‘Humidity9am', 'Cloud9am', 'Cloud3pm' have stronger say in predicting the next day rain while features like 'Pressure9am', 'Pressure3pm', ‘Sunshine’ has negative correlation with the target variable ‘RainTomorrow’. Also we have features which contains Null values. So as a part of pre-processing we used the below pipeline –
@@ -22,8 +22,8 @@ Features like ‘'Pressure9am', 'Pressure3pm', ‘Sunshine’, ‘Evaporation’
 
 The target variable ‘RainTomorrow’ and ‘RainToday’ has strong relation for not raining and class imbalance ratio of Yes and No is around 0.28 before cleaning ,as it can be seen from the below graphsFig2(a)(b), that shows that when ‘RainToday’ has a value ‘No’ then majority of examples in our target variable is also value ‘No’. So, for the ‘NaN’ values in target variable we used the ‘RainToday’ value, and then used the average of value in the next entry and previous day entry. Similar approach was done for the ‘RainToday’ feature.
 
-![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture2.png "Logo Title Text 1")
-![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture3.png "Logo Title Text 1")
+![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Australia/resources/Picture2.png "Logo Title Text 1")
+![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Australia/resources/Picture3.png "Logo Title Text 1")
 
 **iii) Standard Scalar:**
 Features like 'Rainfall','WindGustSpeed', 'Humidity9am’ etc have different scale (in respective units), hence were normalized using Scikit’s off the box StandardScalar transformer.
@@ -40,5 +40,5 @@ iii) While tuning the models, we have emphasized on Precision-0 and Recall-0 whe
 I Trained the resulted dataset using: Logistic Regression, Gaussian Naïve Bayes, Bagging Classifier, k-Nearest Neighbours, Linear SVM and XGBoost, below is the 
 **performance table**: 
 
-![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Austrailia/resources/Picture10.png "Logo Title Text 1")
+![alt text](https://github.com/KoushikGrandhi/Machine-Learning-Projects/blob/master/Rain_Prediction_Australia/resources/Picture10.png "Logo Title Text 1")
 
